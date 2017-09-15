@@ -7,7 +7,6 @@
 # Animation
 # Typography
 # Header
-# Sidebar
 # Content
 # Footer
 
@@ -143,7 +142,7 @@ img {
 }
 
 .color-text {
-  color: #e93a1d;
+  color: #fe9900;
 }
 
 @media (min-width: 768px) {
@@ -288,34 +287,6 @@ img {
 
 }
 
-
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-/*============== for tablets 768px ===========================*/
-@media screen and (min-width: 768px) {
-
-}
-
-/*============== for tablets 1024px ===========================*/
-@media screen and (min-width: 1024px) {
-
-}
-
-/*=================== for PC 1280px ===========================*/
-@media screen and (min-width: 1280px) {
-
-}
-
-/*=================== for PC 1360px ===========================*/
-@media screen and (min-width: 1360px) {
-
-}
-
-/*=================== for MAC 1600px ===========================*/
-@media screen and (min-width: 1600px) {
-
-}
 
 /*--------------------------------------------------------------
 # Content
