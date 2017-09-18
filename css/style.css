@@ -17,20 +17,24 @@
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'OpenSans'; /* Гарнитура шрифта */
-  src: url( "fonts/OpenSans-Regular.ttf" ); /* Путь к файлу со шрифтом */
+  font-family: 'Lato Bold'; /* Гарнитура шрифта */
+  src: url( "fonts/Lato Bold.ttf" ); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-   font-family: 'OpenSansExtraBold'; /* Гарнитура шрифта */
-   src: url( "fonts/OpenSans-ExtraBold.ttf" ); /* Путь к файлу со шрифтом */
+  font-family: 'Lato Regular'; /* Гарнитура шрифта */
+  src: url( "fonts/Lato Regular.ttf" ); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+   font-family: 'MullerExtraBold'; /* Гарнитура шрифта */
+   src: url( "fonts/MullerExtraBold.otf" ); /* Путь к файлу со шрифтом */
   }
 
 @font-face {
-   font-family: 'OpenSansSemibold'; /* Гарнитура шрифта */
-   src: url( "fonts/OpenSans-Semibold.ttf" ); /* Путь к файлу со шрифтом */
+   font-family: 'Code Pro Bold'; /* Гарнитура шрифта */
+   src: url( "fonts/Code Pro Bold.otf" ); /* Путь к файлу со шрифтом */
   }
-
 
 /*--------------------------------------------------------------
 # Animation
@@ -78,18 +82,15 @@ html, body {
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
-	font-family: 'OpenSans', sans-serif;
-  color: #404040;
+	font-family: 'Lato Regular', sans-serif;
+  color: #000000;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size: 1em;
-  font-family: 'OpenSansSemibold', serif;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+	font-size: 2.5em;
+  font-family: 'Code Pro Bold', serif;
 }
 
 ul {
@@ -145,6 +146,10 @@ img {
   color: #fe9900;
 }
 
+.big-title {
+
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -153,54 +158,6 @@ img {
   .cols {
     float: left;
     margin: 1em 0;
-  }
-
-  .cols.col-1 {
-    width: 24.9999%;
-  }
-
-  .cols.col-2 {
-    width: 33.3332%;
-  }
-
-  .cols.col-3 {
-    width: 41.6665%;
-  }
-
-  .cols.col-4 {
-    width: 49.9998%;
-  }
-
-  .cols.col-5 {
-    width: 58.3331%;
-  }
-
-  .cols.col-6 {
-    width: 66.6664%;
-  }
-
-  .cols.col-7 {
-    width: 74.9997%;
-  }
-
-  .cols.col-8 {
-    width: 83.333%;
-  }
-
-  .cols.col-9 {
-    width: 91.663%;
-  }
-
-  .cols.col-10,
-  .cols.col-11,
-  .cols.col-12 {
-    width: 100%;
-  }
-}
-
-@media (min-width: 960px) {
-  .container {
-    max-width: 900px;
   }
 
   .cols.col-1 {
@@ -252,7 +209,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 1170px;
   }
