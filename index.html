@@ -396,5 +396,36 @@
       </div>
     </footer>
 
+    <div class="wrap"></div>
+
+    <div id="window modal-1" class="popup-question">
+      <div class="popup-question-close">
+        x
+      </div>
+      <div class="box-title">
+        <h3 class="medium-title">
+          запишьсь на тренинг<br>
+          <span class="color-text">
+            Прямо сейчас
+          </span>
+        </h3>
+      </div>
+      <form id="js_form-1" class="question-form-box clearfix">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="">
+        <input type="hidden" name="admin_email" value="">
+        <input type="hidden" name="position" value="">
+        <!-- END Hidden Required Fields -->
+        <input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+        <input id="mail" type="text" name="mail" placeholder="Введите ваш e-mail"
+        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+        <input id="phone" type="text" name="phone" placeholder="Введите ваш телефон"
+        required>
+        <button class="form-message-btn" type="submit" name="send">записаться</button>
+      </form>
+    </div>
+
+
+
   </body>
 </html>

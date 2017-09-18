@@ -6,9 +6,7 @@
 # Fonts
 # Animation
 # Typography
-# Header
 # Content
-# Footer
 
 --------------------------------------------------------------*/
 
@@ -34,6 +32,11 @@
 @font-face {
    font-family: 'Code Pro Bold'; /* Гарнитура шрифта */
    src: url( "fonts/Code Pro Bold.otf" ); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
+   font-family: 'Gotham Pro'; /* Гарнитура шрифта */
+   src: url( "fonts/gothamPro.otf" ); /* Путь к файлу со шрифтом */
   }
 
 /*--------------------------------------------------------------
@@ -173,7 +176,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-# Header
+# Content
 --------------------------------------------------------------*/
 
 .header {
@@ -941,68 +944,111 @@ footer .header__logo h1 {
     font-size: 1.65em;
     margin-top: 2.5em;
   }
-
-}
-
-/*=================== for MAC 1600px ===========================*/
-@media screen and (min-width: 1600px) {
-
-}
-
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*============== for tablets 768px ===========================*/
-@media screen and (min-width: 768px) {
-
-}
-
-/*============== for tablets 1024px ===========================*/
-@media screen and (min-width: 1024px) {
-
-}
-
-/*=================== for PC 1280px ===========================*/
-@media screen and (min-width: 1280px) {
-
-}
-
-/*=================== for PC 1360px ===========================*/
-@media screen and (min-width: 1360px) {
-
-}
-
-/*=================== for MAC 1600px ===========================*/
-@media screen and (min-width: 1600px) {
-
 }
 
 /*--------------------------------------------------------------
-# Footer
+# modal window
 --------------------------------------------------------------*/
 
-/*============== for tablets 768px ===========================*/
-@media screen and (min-width: 768px) {
-
+.wrap {
+  display: block;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  overflow: auto;
 }
 
-/*============== for tablets 1024px ===========================*/
-@media screen and (min-width: 1024px) {
-
+.popup-question {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  z-index: 99999;
+  display: block;
+  width: 350px;
+  height: 520px;
+  margin: 5px auto;
+  padding: 55px 45px;
+  box-sizing: border-box;
+	border-radius: 8px;
+  color: #ffffff;
+  background: #353535;
 }
 
-/*=================== for PC 1280px ===========================*/
-@media screen and (min-width: 1280px) {
-
+.modal-content-show {
+  display: block;
 }
 
-/*=================== for PC 1360px ===========================*/
-@media screen and (min-width: 1360px) {
-
+.popup-question-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: block;
+  width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+  font-size: 13px;
+	color: #fe9900;
+  background-color: #353535;
+	border: 2px solid #000000;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px #fe9900
 }
 
-/*=================== for MAC 1600px ===========================*/
-@media screen and (min-width: 1600px) {
+.popup-question-close:hover {
+  cursor: pointer;
+  color: #000000;
+	background-color: #fe9900;
+}
 
+.popup-question .box-title {
+  font-size: 14px;
+}
+
+.popup-question .box-title .color-text {
+  font-size: 25px;
+}
+
+.popup-question .medium-title {
+  margin-top: 0;
+}
+
+.question-form-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 12px 36px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Gotam Pro', 'Arial', serif;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+
+.question-form-box .form-message-btn {
+  width: 100%;
+  margin-top: 35px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Lato Bold', 'Arial', serif;
+  font-size: 22px;
+  color: #000000;
+  background-color: #fe9900;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 12px rgba(254, 137, 0, 0.54);
 }
