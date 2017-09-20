@@ -15,10 +15,7 @@
 	<div class="container clearfix">
 		<div class="box-title">
 			<h3 class="medium-title">
-				<span class="color-text">
-					Выбери свой формат участия<br>
-				</span>
-				и зарегистрируйся
+				<?php the_field( 'title-11' ); ?>
 			</h3>
 		</div>
 		<div class="box-content clearfix">
@@ -27,21 +24,17 @@
 					<img src="<?php bloginfo('template_url'); ?>/img/photo_coach.jpg" alt="">
 				</figure>
 				<figure class="header__logo">
-					<img src="<?php bloginfo('template_url'); ?>/img/logo-y.png" alt="Мотивация к похудению" width="256" height="256">
-					<?php dynamic_sidebar( 'title-h' ); ?>
+					<img src="<?php bloginfo('template_url'); ?>/img/logo-s.png" alt="Мотивация к похудению" width="256" height="256">
+					<h1>
+						<?php the_field( 'title-h' ); ?>
+					</h1>
 				</figure>
-
 			</div>
-			<form class="modal-form box-content__form" method="post">
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="сайт о похудении">
-				<?php dynamic_sidebar( 'mail' ); ?>
-				<input type="hidden" name="form_subject" value="Участвовать в тренинге">
-				<!-- END Hidden Required Fields -->
+			<form class="box-content__form" method="post">
 				<input id="name" type="text" name="name" placeholder="Имя...">
 				<input id="mail" type="text" name="mail" placeholder="E-mail...">
 				<input id="phone" type="text" name="phone" placeholder="Телефон...">
-				<button class="big-btn" type="submit" name="button">Записаться</button>
+				<button class="big-btn btn-modal-4" type="submit" name="button">Записаться</button>
 				<input id="accept" class="accept" type="checkbox" name="accept" checked>
 				<label class="accept-label" for="accept">Я даю согласие на  получение рекламных материалов от Илоны Щербаковой</label>
 			</form>
@@ -55,7 +48,7 @@
 <div id="window" class="popup-question modal-s">
 	<div class="box-title">
 		<div class="popup-question-close">
-			✕
+			x
 		</div>
 		<h3 class="medium-title">
 			Спасибо!<br>
@@ -68,7 +61,7 @@
 
 <div id="window" class="popup-question modal-1">
 	<div class="popup-question-close">
-		✕
+		x
 	</div>
 	<div class="box-title">
 		<h3 class="medium-title">
@@ -81,7 +74,7 @@
 	<form id="js_form-1" class="modal-form question-form-box clearfix">
 		<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="сайт о похудении">
-		<?php dynamic_sidebar( 'mail' ); ?>
+		<input type="hidden" name="admin_email" value="yu.sh.2583@gmail.com">
 		<input type="hidden" name="form_subject" value="Принять участие">
 		<!-- END Hidden Required Fields -->
 		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
@@ -94,7 +87,7 @@
 
 <div id="window" class="popup-question modal-2">
 	<div class="popup-question-close">
-		✕
+		x
 	</div>
 	<div class="box-title">
 		<h3 class="medium-title">
@@ -107,7 +100,7 @@
 	<form id="js_form-1" class="modal-form question-form-box clearfix">
 		<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="сайт о похудении">
-		<?php dynamic_sidebar( 'mail' ); ?>
+		<input type="hidden" name="admin_email" value="jeorgeo@list.ru">
 		<input type="hidden" name="form_subject" value="Участвовать в тренинге">
 		<!-- END Hidden Required Fields -->
 		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
@@ -121,7 +114,7 @@
 
 <div id="window" class="popup-question modal-3">
 	<div class="popup-question-close">
-		✕
+		x
 	</div>
 	<div class="box-title">
 		<h3 class="medium-title">
@@ -134,7 +127,7 @@
 	<form id="js_form-1" class="modal-form question-form-box clearfix">
 		<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="сайт о похудении">
-		<?php dynamic_sidebar( 'mail' ); ?>
+		<input type="hidden" name="admin_email" value="jeorgeo@list.ru">
 		<input type="hidden" name="form_subject" value="Узнать подробнее">
 		<!-- END Hidden Required Fields -->
 		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
@@ -147,7 +140,7 @@
 
 <div id="window" class="popup-question modal-4">
 	<div class="popup-question-close">
-		✕
+		x
 	</div>
 	<div class="box-title">
 		<h3 class="medium-title">
@@ -160,7 +153,7 @@
 	<form id="js_form-1" class="modal-form question-form-box clearfix">
 		<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="сайт о похудении">
-		<?php dynamic_sidebar( 'mail' ); ?>
+		<input type="hidden" name="admin_email" value="jeorgeo@list.ru">
 		<input type="hidden" name="form_subject" value="Записаться">
 		<!-- END Hidden Required Fields -->
 		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
@@ -171,9 +164,6 @@
 		<button class="form-message-btn" type="submit" name="send">записаться</button>
 	</form>
 </div>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-migrate-1.4.1.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/form.js"></script>
 
 <?php wp_footer(); ?>
 

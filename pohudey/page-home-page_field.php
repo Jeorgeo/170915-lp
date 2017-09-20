@@ -49,16 +49,8 @@ get_header(); ?>
 						<?php the_field( 'title-3' ); ?>
 					</h3>
 					<ol>
-						<li>
-							<?php the_field( 'pole-31' ); ?>
-						</li>
-						<li>
-							<?php the_field( 'pole-32' ); ?>
-						</li>
-						<li>
-							<?php the_field( 'pole-33' ); ?>
-						</li>
-					</ol>							
+						<?php the_field( 'pole-3' ); ?>
+					</ol>
 				</article>
 			</div>
 		</div>

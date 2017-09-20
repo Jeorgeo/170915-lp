@@ -25,6 +25,17 @@ function removePopup() {
   winPopup.classList.remove("modal-content-show");
 };
 
+function showThank() {
+  for (var i = 0; i < popup.length; i++) {
+    popup[i].classList.remove("modal-content-show");
+  };
+  popupS.classList.add("modal-content-show");
+  setTimeout(function() {
+    popupS.classList.remove("modal-content-show");
+    winPopup.classList.remove("modal-content-show");
+  }, 2000);
+}
+
 submitForm1.addEventListener("click", function(event) {
 
   event.preventDefault();
@@ -96,8 +107,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th,
 		}).done(function() {
-			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
-			removePopup();
+			showThank();
 		});
 		return false;
 	});

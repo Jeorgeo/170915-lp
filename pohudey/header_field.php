@@ -24,16 +24,25 @@
 		<div class="container clearfix">
 			<figure class="header__logo">
 				<div class="logo-box">
-					<img src="<?php bloginfo('template_url'); ?>/img/logo-y.png" alt="Мотивация к похудению" width="256" height="256">
+					<img src="<?php bloginfo('template_url'); ?>/img/logo-s.png" alt="Мотивация к похудению" width="256" height="256">
 				</div>
-				<?php dynamic_sidebar( 'title-h' ); ?>
+				<h1>
+					<?php the_field( 'title-h' ); ?>
+				</h1>
 			</figure>
 			<div class="header__adress">
-				<?php dynamic_sidebar( 'adress' ); ?>
+				<p>
+					<?php the_field( 'adress' ); ?>
+				</p>
 			</div>
 			<div class="header__date">
-				<?php dynamic_sidebar( 'data' ); ?>
+				<p>
+					<?php the_field( 'data' ); ?>
+				</p>
 			</div>
-			<?php dynamic_sidebar( 'phone' ); ?>
+			<div class="header__contacts">
+				<a href="tel:<?php the_field( 'phone_1' ); ?>"><?php the_field( 'phone_1' ); ?></a>
+				<a href="tel:<?php the_field( 'phone_2' ); ?>"><?php the_field( 'phone_2' ); ?></a>
+			</div>
 		</div>
 	</header>

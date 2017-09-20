@@ -102,11 +102,47 @@ add_action( 'after_setup_theme', 'pohudey_content_width', 0 );
  */
 function pohudey_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'pohudey' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Заголовок в шапке', 'pohudey' ),
+		'id'            => 'title-h',
 		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<h1>',
+		'after_widget'  => '</h1>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Адрес проведения', 'pohudey' ),
+		'id'            => 'adress',
+		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Дата', 'pohudey' ),
+		'id'            => 'data',
+		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Телефоны', 'pohudey' ),
+		'id'            => 'phone',
+		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
+		'before_widget' => '<div class="header__contacts">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'емайл в форму', 'pohudey' ),
+		'id'            => 'mail',
+		'description'   => esc_html__( 'Add widgets here.<input type="hidden" name="admin_email" value="pohydey@mail.ru">', 'pohudey' ),
+		'before_widget' => '<label>',
+		'after_widget'  => '</label>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -117,11 +153,9 @@ add_action( 'widgets_init', 'pohudey_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pohudey_scripts() {
-	wp_enqueue_style( 'normalize-style', $dineli_url . "/css/normalize.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'normalize-style', get_template_directory() . "/css/normalize.css", array(), 		'2', 'all' );
 
 	wp_enqueue_style( 'pohudey-style', get_stylesheet_uri() );
-
-	wp_enqueue_script('form', $dineli_url . '/js/form.js', array(), '1', true );	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
