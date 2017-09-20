@@ -30,7 +30,11 @@
 					<img src="<?php bloginfo('template_url'); ?>/img/logo-y.png" alt="Мотивация к похудению" width="256" height="256">
 					<?php dynamic_sidebar( 'title-h' ); ?>
 				</figure>
-
+				<div class="social-icons">
+					<?php dynamic_sidebar( 'link_vk' ); ?>
+					<?php dynamic_sidebar( 'link_fb' ); ?>
+					<?php dynamic_sidebar( 'link_in' ); ?>
+				</div>
 			</div>
 			<form class="modal-form box-content__form" method="post">
 				<!-- Hidden Required Fields -->
@@ -46,7 +50,6 @@
 				<label class="accept-label" for="accept">Я даю согласие на  получение рекламных материалов от Илоны Щербаковой</label>
 			</form>
 		</div>
-		<div class="box-btn"></div>
 	</div>
 </footer>
 

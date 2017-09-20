@@ -28,11 +28,16 @@
 				</div>
 				<?php dynamic_sidebar( 'title-h' ); ?>
 			</figure>
+			<div class="header__date clearfix">
+				<div class="data1">
+					<?php dynamic_sidebar( 'data1' ); ?>
+				</div>
+				<div class="data2">
+					<?php dynamic_sidebar( 'data2' ); ?>
+				</div>
+			</div>
 			<div class="header__adress">
 				<?php dynamic_sidebar( 'adress' ); ?>
-			</div>
-			<div class="header__date">
-				<?php dynamic_sidebar( 'data' ); ?>
 			</div>
 			<?php dynamic_sidebar( 'phone' ); ?>
 		</div>

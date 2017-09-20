@@ -120,8 +120,17 @@ function pohudey_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Дата', 'pohudey' ),
-		'id'            => 'data',
+		'name'          => esc_html__( 'Дата1', 'pohudey' ),
+		'id'            => 'data1',
+		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Дата2', 'pohudey' ),
+		'id'            => 'data2',
 		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),
 		'before_widget' => '<p>',
 		'after_widget'  => '</p>',
@@ -143,6 +152,33 @@ function pohudey_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.<input type="hidden" name="admin_email" value="pohydey@mail.ru">', 'pohudey' ),
 		'before_widget' => '<label>',
 		'after_widget'  => '</label>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылка вконтакте', 'pohudey' ),
+		'id'            => 'link_vk',
+		'description'   => esc_html__( 'Add widgets here.<input type="hidden" name="admin_email" value="pohydey@mail.ru">', 'pohudey' ),
+		'before_widget' => '<div class="social-icon vk">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылка фейсбук', 'pohudey' ),
+		'id'            => 'link_fb',
+		'description'   => esc_html__( 'Add widgets here.<input type="hidden" name="admin_email" value="pohydey@mail.ru">', 'pohudey' ),
+		'before_widget' => '<div class="social-icon fb">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылка инстаграмм', 'pohudey' ),
+		'id'            => 'link_in',
+		'description'   => esc_html__( 'Add widgets here.<input type="hidden" name="admin_email" value="pohydey@mail.ru">', 'pohudey' ),
+		'before_widget' => '<div class="social-icon in">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
