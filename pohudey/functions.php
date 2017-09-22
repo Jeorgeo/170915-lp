@@ -120,6 +120,24 @@ function pohudey_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
+		'name'          => esc_html__( 'Адрес проведения в футере', 'pohudey' ),
+		'id'            => 'adress-f1',
+		'description'   => esc_html__( 'Add widgets here.>', 'pohudey' ),
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Адрес проведения в футере', 'pohudey' ),
+		'id'            => 'adress-f2',
+		'description'   => esc_html__( 'Add widgets here.>', 'pohudey' ),
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
 		'name'          => esc_html__( 'Дата1', 'pohudey' ),
 		'id'            => 'data1',
 		'description'   => esc_html__( 'Add widgets here.', 'pohudey' ),

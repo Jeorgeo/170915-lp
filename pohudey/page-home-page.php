@@ -58,7 +58,7 @@ get_header(); ?>
 						<li>
 							<?php the_field( 'pole-33' ); ?>
 						</li>
-					</ol>							
+					</ol>
 				</article>
 			</div>
 		</div>
@@ -241,6 +241,39 @@ get_header(); ?>
 			</figure>
 		</div>
 	</section>
+	<section class="main box-9">
+		<div class="container clearfix">
+			<div class="box-title">
+				<h3 class="medium-title">
+					<span class="color-text">
+						Выбери свой формат участия<br>
+					</span>
+					и зарегистрируйся
+				</h3>
+			</div>
+			<div class="box-content clearfix">
+				<div class="box-content__photo">
+					<figure class="footer__photo">
+						<img src="<?php bloginfo('template_url'); ?>/img/photo_coach.jpg" alt="">
+					</figure>
+				</div>
+				<form class="modal-form box-content__form" method="post">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="сайт о похудении">
+					<?php dynamic_sidebar( 'mail' ); ?>
+					<input type="hidden" name="form_subject" value="Участвовать в тренинге">
+					<!-- END Hidden Required Fields -->
+					<input id="name" type="text" name="name" placeholder="Имя...">
+					<input id="mail" type="text" name="mail" placeholder="E-mail...">
+					<input id="phone" type="text" name="phone" placeholder="Телефон...">
+					<button class="big-btn" type="submit" name="button">Записаться</button>
+					<input id="accept" class="accept" type="checkbox" name="accept" checked>
+					<label class="accept-label" for="accept">Я даю согласие на  получение рекламных материалов от Илоны Щербаковой</label>
+				</form>
+			</div>
+		</div>		
+	</section>
+
 </main>
 
 <?php

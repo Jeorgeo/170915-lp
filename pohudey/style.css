@@ -186,7 +186,7 @@ img {
 
 .header {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.2em;
   color: #ffffff;
   background: #353535 url('img/bg_coach.png') no-repeat 95% 100%;
   background-size: contain;
@@ -239,13 +239,32 @@ footer .header__logo h1 {
   font-size: 0.9em;
 }
 
+footer .header__date {
+  width: 100%;
+}
+
 .data1,
 .data2 {
   float: left;
-  width: 40%;
+  width: 63%;
   margin-right: 3%;
+  margin-left: 17%;
   padding-right: 10px;
   border-left: 1px solid #fe9900;
+}
+
+footer .data1,
+footer .data2 {
+  float: left;
+  width: 26%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.adress1,
+.adress2 {
+  float: left;
+  width: 50%;
 }
 
 .data2 {
@@ -257,12 +276,27 @@ footer .header__logo h1 {
 }
 
 .header__contacts a {
+  position: relative;
   display: block;
+  margin-left: 0.5em;
   margin-bottom: 0.3em;
+  padding-left: 1.5em;
 }
 
 .header__contacts a:hover {
   color: #fe9900;
+}
+
+.header__contacts a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.15em;
+  height: 1.15em;
+  background: url('img/icon_phone.png') no-repeat 0 0;
+  background-size: contain;
+  content: '';
 }
 
 .main {
@@ -614,6 +648,17 @@ footer .header__logo h1 {
   background-color: rgba(254, 137, 0, 1);
 }
 
+footer {
+  padding: 0.7em 0;
+  background-color: #353535;
+  color: #ffffff;
+}
+
+footer .adress1 p ,
+footer .adress2 p {
+  margin: 0.7em 0;
+}
+
 /*============== for tablets 768px ===========================*/
 
 @media screen and (min-width: 768px) {
@@ -647,7 +692,7 @@ footer .header__logo h1 {
   }
 
   .header__date {
-    width: 18%;
+    width: 22%;
     margin: 0;
   }
 
@@ -656,6 +701,7 @@ footer .header__logo h1 {
     float: left;
     width: 40%;
     margin-right: 3%;
+    margin-left: 0;
     padding-right: 10px;
     border-left: none;
     border-right: 1px solid #fe9900;
@@ -839,6 +885,10 @@ footer .header__logo h1 {
     margin-top: 0;
   }
 
+  footer .header__date {
+    width: 55%;
+  }
+
 }
 
 /*============== for tablets 1024px ===========================*/
@@ -849,6 +899,7 @@ footer .header__logo h1 {
     z-index: 9999;
     width: 100%;
     padding-top: 0;
+    opacity: 0.95;
     box-shadow: 0 -3px 3px 6px #353535;
   }
 
@@ -865,6 +916,12 @@ footer .header__logo h1 {
     display: block;
     text-align: center;
     font-size: 1.3em;
+  }
+
+  .data1,
+  .data2 {
+    width: 30%;
+    margin-left: 0;
   }
 }
 
@@ -889,7 +946,14 @@ footer .header__logo h1 {
 
   .header__contacts {
     width: 15%;
-    margin-bottom: 1.3em;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+  }
+
+  .data1,
+  .data2 {
+    margin-top: 1em;
   }
 
   .box-1 .container {
@@ -918,14 +982,25 @@ footer .header__logo h1 {
     min-height: 720px;
   }
 
+  .footer__photo {
+    margin-bottom: 2em;
+  }
+
   footer .box-content {
     position: relative;
   }
 
+  .adress1, .adress2 {
+    float: left;
+    width: 50%;
+    padding: 1.2em;
+    text-align: left;
+  }
+
   footer .social-icons {
     position: absolute;
-    bottom: 26px;
-    left: 66%;
+    bottom: 30%;
+    left: 10%;
   }
 }
 
@@ -941,7 +1016,7 @@ footer .header__logo h1 {
   }
 
   .header__adress {
-    width: 26%;
+    width: 20%;
     margin-top: 1em;
     font-size: 1em;
   }
@@ -952,9 +1027,13 @@ footer .header__logo h1 {
     font-size: 1.1em;
   }
 
+  .data1,
+  .data2 {
+    margin-top: 0;
+  }
+
   .header__contacts {
-    margin-top: 1.5em;
-    font-size: 1.1em;
+    margin-top: 1.2em;
   }
 
   .box-1 {
