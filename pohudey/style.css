@@ -294,8 +294,8 @@ footer .data2 {
   display: block;
   width: 1.15em;
   height: 1.15em;
-  background: url('img/sprite.png') no-repeat -5px -5px;
-  background-size: contain;
+  background: url('img/sprite.png') no-repeat 0 -45px;
+  background-size: 100%;
   content: '';
 }
 
@@ -400,8 +400,8 @@ footer .data2 {
   display: block;
   width: 37px;
   height: 40px;
-  background: url('img/sprite.png') no-repeat -5px -975px;
-  background-size: contain;
+  background: url('img/sprite.png') no-repeat 0 -140px;
+  background-size: 100%;
   content: '';
 }
 
@@ -430,8 +430,8 @@ footer .data2 {
   padding: 8px;
   padding-left: 10px;
   text-align: center;
-  background: url('img/icon_cloud.png') no-repeat 0 0;
-  background-size: contain;
+  background: url('img/sprite.png') no-repeat 0 0;
+  background-size: 100%;
 }
 
 .box-4 p .smile {
@@ -451,8 +451,8 @@ footer .data2 {
   left: 50%;
   width: 30px;
   height: 30px;
-  background: url('img/icon_smile.png') no-repeat 0 0;
-  background-size: contain;
+  background: url('img/sprite.png') no-repeat 0 -53px;
+  background-size: 100%;
   content: '';
 }
 
@@ -550,7 +550,7 @@ footer .data2 {
   display: block;
   width: 48px;
   height: 48px;
-  background: url('img/shape_black.png') no-repeat 0 0;
+  background: url('img/sprite.png') no-repeat -5px -709px;
   background-size: contain;
   content: '';
 }
@@ -907,7 +907,6 @@ footer .adress2 p {
     z-index: 9999;
     width: 100%;
     padding-top: 0;
-    background: #353535 url('img/bg_coach.png') no-repeat 95% 100%;
     opacity: 0.95;
     box-shadow: 0 -3px 3px 6px #353535;
   }
