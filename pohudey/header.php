@@ -24,7 +24,7 @@
 		<div class="container clearfix">
 			<figure class="header__logo">
 				<div class="logo-box">
-					<img src="<?php bloginfo('template_url'); ?>/img/logo-y.png" alt="Мотивация к похудению" width="256" height="256">
+					<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Мотивация к похудению" width="256" height="256">
 				</div>
 				<?php dynamic_sidebar( 'title-h' ); ?>
 			</figure>
