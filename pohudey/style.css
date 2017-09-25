@@ -188,7 +188,7 @@ img {
   padding-top: 1em;
   padding-bottom: 0.2em;
   color: #ffffff;
-  background: #353535 url('img/bg_coach.png') no-repeat 95% 100%;
+  background: #353535 url('img/bg_coach-s.png') no-repeat 95% 100%;
   background-size: contain;
 }
 
@@ -294,7 +294,7 @@ footer .data2 {
   display: block;
   width: 1.15em;
   height: 1.15em;
-  background: url('img/icon_phone.png') no-repeat 0 0;
+  background: url('img/sprite.png') no-repeat -5px -5px;
   background-size: contain;
   content: '';
 }
@@ -400,7 +400,7 @@ footer .data2 {
   display: block;
   width: 37px;
   height: 40px;
-  background: url('img/shape1_white.png') no-repeat 0 0;
+  background: url('img/sprite.png') no-repeat -5px -975px;
   background-size: contain;
   content: '';
 }
@@ -532,6 +532,7 @@ footer .data2 {
 
 .pack__price p span {
   position: absolute;
+  top: 7px;
   font-size: 18px;
 }
 
@@ -555,6 +556,7 @@ footer .data2 {
 }
 
 .box-8 .box-content {
+  position: relative;
   min-height: 150px;
   background: url('img/bg_video.jpg') no-repeat 50% 100%;
   background-size: cover;
@@ -565,6 +567,12 @@ footer .data2 {
   min-height: 150px;
   box-sizing: border-box;
   background-color: rgba(135, 135, 135, 0.5);
+}
+
+.box-8 .video_play {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .box-content__form input {
@@ -899,6 +907,7 @@ footer .adress2 p {
     z-index: 9999;
     width: 100%;
     padding-top: 0;
+    background: #353535 url('img/bg_coach.png') no-repeat 95% 100%;
     opacity: 0.95;
     box-shadow: 0 -3px 3px 6px #353535;
   }
@@ -1065,6 +1074,10 @@ footer .adress2 p {
     font-size: 32px;
   }
 
+  .box-2 {
+    padding-bottom: 2em;
+  }
+
   .box-2 figure {
     margin-top: 7em;
   }
@@ -1098,6 +1111,10 @@ footer .adress2 p {
     margin-bottom: 4em;
     padding: 38px;
     font-size: 1.35em;
+  }
+
+  .box-3 .box-btn {
+    margin-top: 5em;
   }
 
   .box-4 .medium-title {
@@ -1140,7 +1157,7 @@ footer .adress2 p {
 
   .box-4 .medium-btn {
     font-size: 30px;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
   }
 
   .box-5 {
@@ -1166,7 +1183,9 @@ footer .adress2 p {
   }
 
   .box-7 .medium-title {
+    width: 65%;
     font-size: 2.4em;
+    margin: auto;
     margin-top: 1.5em;
     margin-bottom: 3em;
   }
@@ -1194,9 +1213,17 @@ footer .adress2 p {
     min-height: 680px;
   }
 
+  .box-9 .box-title {
+    margin: 4em 0;
+  }
+
   .footer .box-title {
     font-size: 1.65em;
     margin-top: 2.5em;
+  }
+
+  .footer__photo {
+    margin-bottom: 4em;
   }
 }
 

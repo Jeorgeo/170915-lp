@@ -227,6 +227,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+	<!-- Скрыт блок видео
 	<section class="main box-8">
 		<div class="container clearfix">
 			<div class="box-title">
@@ -236,11 +237,15 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="box-content">
-			<figure>
+			<figure class="video_btn">
 				<img src="<?php bloginfo('template_url'); ?>/img/video-pl_bg.png" alt="">
 			</figure>
+			<div class="video_play">
+				<?php the_field( 'video' ); ?>
+			</div>
 		</div>
 	</section>
+-->
 	<section class="main box-9">
 		<div class="container clearfix">
 			<div class="box-title">
@@ -263,15 +268,17 @@ get_header(); ?>
 					<?php dynamic_sidebar( 'mail' ); ?>
 					<input type="hidden" name="form_subject" value="Участвовать в тренинге">
 					<!-- END Hidden Required Fields -->
-					<input id="name" type="text" name="name" placeholder="Имя...">
-					<input id="mail" type="text" name="mail" placeholder="E-mail...">
-					<input id="phone" type="text" name="phone" placeholder="Телефон...">
+					<input id="name" type="text" name="name" placeholder="Имя..." pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+					<input id="mail" type="text" name="mail" placeholder="E-mail..." required
+					pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+					<input id="phone" type="text" name="phone" placeholder="Телефон..." required
+					pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 					<button class="big-btn" type="submit" name="button">Записаться</button>
 					<input id="accept" class="accept" type="checkbox" name="accept" checked>
 					<label class="accept-label" for="accept">Я даю согласие на  получение рекламных материалов от Илоны Щербаковой</label>
 				</form>
 			</div>
-		</div>		
+		</div>
 	</section>
 
 </main>

@@ -99,6 +99,12 @@ winPopup.addEventListener("click", function(event) {
 
 $(document).ready(function() {
 
+  $(function() {
+    $(".video_btn").click(function() {
+      $(".video_play").animate({opacity: '1'}, 1000);
+    })
+  })
+
 	//E-mail Ajax Send
 	$(".modal-form").submit(function() { //Change
 		var th = $(this).serialize();

@@ -77,10 +77,11 @@
 		<?php dynamic_sidebar( 'mail' ); ?>
 		<input type="hidden" name="form_subject" value="Принять участие">
 		<!-- END Hidden Required Fields -->
-		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
-		<input id="mail" type="text" name="mail" placeholder="Введите ваш e-mail">
-		<input id="phone" type="text" name="phone" placeholder="Введите ваш телефон"
-		required>
+		<input id="name" type="text" name="name" placeholder="Имя..." pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+		<input id="mail" type="text" name="mail" placeholder="E-mail..." required
+		pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+		<input id="phone" type="text" name="phone" placeholder="Телефон..." required
+		pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 		<button class="form-message-btn" type="submit" name="send">записаться</button>
 	</form>
 </div>
@@ -103,11 +104,11 @@
 		<?php dynamic_sidebar( 'mail' ); ?>
 		<input type="hidden" name="form_subject" value="Участвовать в тренинге">
 		<!-- END Hidden Required Fields -->
-		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
-		<input id="mail" type="text" name="mail" placeholder="Введите ваш e-mail"
-		pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
-		<input id="phone" type="text" name="phone" placeholder="Введите ваш телефон"
-		required>
+		<input id="name" type="text" name="name" placeholder="Имя..." pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+		<input id="mail" type="text" name="mail" placeholder="E-mail..." required
+		pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+		<input id="phone" type="text" name="phone" placeholder="Телефон..." required
+		pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 		<button class="form-message-btn" type="submit" name="send">записаться</button>
 	</form>
 </div>
@@ -130,10 +131,11 @@
 		<?php dynamic_sidebar( 'mail' ); ?>
 		<input type="hidden" name="form_subject" value="Узнать подробнее">
 		<!-- END Hidden Required Fields -->
-		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
-		<input id="mail" type="text" name="mail" placeholder="Введите ваш e-mail">
-		<input id="phone" type="text" name="phone" placeholder="Введите ваш телефон"
-		required>
+		<input id="name" type="text" name="name" placeholder="Имя..." pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+		<input id="mail" type="text" name="mail" placeholder="E-mail..." required
+		pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+		<input id="phone" type="text" name="phone" placeholder="Телефон..." required
+		pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 		<button class="form-message-btn" type="submit" name="send">записаться</button>
 	</form>
 </div>
@@ -156,11 +158,11 @@
 		<?php dynamic_sidebar( 'mail' ); ?>
 		<input type="hidden" name="form_subject" value="Записаться">
 		<!-- END Hidden Required Fields -->
-		<input id="name" type="text" name="name" placeholder="Введите ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
-		<input id="mail" type="text" name="mail" placeholder="Введите ваш e-mail"
-		pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
-		<input id="phone" type="text" name="phone" placeholder="Введите ваш телефон"
-		required>
+		<input id="name" type="text" name="name" placeholder="Имя..." pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+		<input id="mail" type="text" name="mail" placeholder="E-mail..." required
+		pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+		<input id="phone" type="text" name="phone" placeholder="Телефон..." required
+		pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 		<button class="form-message-btn" type="submit" name="send">записаться</button>
 	</form>
 </div>
