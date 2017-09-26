@@ -6,12 +6,14 @@ var popupM1 = document.querySelector(".modal-1");
 var popupM2 = document.querySelector(".modal-2");
 var popupM3 = document.querySelector(".modal-3");
 var popupM4 = document.querySelector(".modal-4");
+var popupVideo = document.querySelector(".modal-video");
 var close = document.querySelectorAll(".popup-question-close");
 var winPopup = document.querySelector(".wrap");
 var submitForm1 = document.querySelector(".btn-modal-1");
 var submitForm2 = document.querySelector(".btn-modal-2");
 var submitForm3 = document.querySelector(".btn-modal-3");
 var submitForm4 = document.querySelector(".btn-modal-4");
+var showVideo = document.querySelector(".video_btn");
 
 function showPopup(modal) {
   modal.classList.add("modal-content-show");
@@ -68,6 +70,14 @@ submitForm4.addEventListener("click", function(event) {
 
 });
 
+showVideo.addEventListener("click", function(event) {
+
+  event.preventDefault();
+
+  showPopup(popupVideo);
+
+});
+
 for (var i = 0; i < close.length; i++) {
 
   close[i].addEventListener("click", function(event) {
@@ -96,6 +106,7 @@ winPopup.addEventListener("click", function(event) {
     removePopup();
   }
 });
+
 
 $(document).ready(function() {
 

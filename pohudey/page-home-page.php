@@ -227,7 +227,6 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	<!-- Скрыт блок видео
 	<section class="main box-8">
 		<div class="container clearfix">
 			<div class="box-title">
@@ -240,12 +239,12 @@ get_header(); ?>
 			<figure class="video_btn">
 				<img src="<?php bloginfo('template_url'); ?>/img/video-pl_bg.png" alt="">
 			</figure>
-			<div class="video_play">
+			<div class="modal-video video_play popup-question">
+				
 				<?php the_field( 'video' ); ?>
 			</div>
 		</div>
 	</section>
--->
 	<section class="main box-9">
 		<div class="container clearfix">
 			<div class="box-title">
